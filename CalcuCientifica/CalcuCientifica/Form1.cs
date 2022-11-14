@@ -579,5 +579,21 @@ namespace CalcuCientifica
                 tb2.Text = res1;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += ".";
+
+
+
+            }
+            else
+            {
+                tb2.SelectedText += ".";
+            }
+
+        }
     }
 }
