@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\bin\Debug\CalcuCientifica.exe.config
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\bin\Debug\CalcuCientifica.exe
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\bin\Debug\CalcuCientifica.pdb
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\bin\Debug\org.matheval.dll
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\obj\Debug\CalcuCientifica.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\obj\Debug\CalcuCientifica.Form1.resources
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\obj\Debug\CalcuCientifica.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\obj\Debug\CalcuCientifica.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\obj\Debug\CalcuCientifica.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\obj\Debug\CalcuCientifica.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\obj\Debug\CalcuCientifica.exe
+C:\Users\Lenovo\Desktop\materias\PIS\scriptsPis\calculadora\CalcuCientifica\CalcuCientifica\obj\Debug\CalcuCientifica.pdb
