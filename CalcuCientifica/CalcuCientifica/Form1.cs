@@ -21,9 +21,16 @@ namespace CalcuCientifica
         {
 
         }
+
         public double Potencia(double bas, double pot)
         {
             double res = Math.Pow(bas, pot);
+            return res;
+        }
+
+        public double Raiz(double bas, double ind)
+        {
+            double res = Math.Pow(bas, 1 / ind);
             return res;
         }
     }
