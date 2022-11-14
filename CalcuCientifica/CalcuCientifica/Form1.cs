@@ -21,5 +21,10 @@ namespace CalcuCientifica
         {
 
         }
+        public double Potencia(double bas, double pot)
+        {
+            double res = Math.Pow(bas, pot);
+            return res;
+        }
     }
 }
