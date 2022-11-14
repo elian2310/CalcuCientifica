@@ -375,5 +375,177 @@ namespace CalcuCientifica
         {
             Plot2d(tb1.Text);
         }
+
+        private void btnone_Click(object sender, EventArgs e)
+        {
+            
+            if(isSelected==true)
+            {
+                tb1.SelectedText += "1";
+               
+                
+
+            }
+            else
+            {
+                tb2.SelectedText += "1";
+            }
+            
+        }
+
+        bool isSelected;
+        private void tb1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tb2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void tb1_Click(object sender, EventArgs e)
+        {
+            isSelected = true;
+        }
+
+        private void tb2_Click(object sender, EventArgs e)
+        {
+            isSelected = false;
+        }
+
+        private void btntwo_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += "2";
+
+
+
+            }
+            else
+            {
+                tb2.SelectedText += "2";
+            }
+        }
+
+        private void btnthree_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += "3";
+
+
+
+            }
+            else
+            {
+                tb2.SelectedText += "3";
+            }
+        }
+
+        private void btnfour_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += "4";
+
+
+
+            }
+            else
+            {
+                tb2.SelectedText += "4";
+            }
+        }
+
+        private void btnfive_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += "5";
+
+
+            }
+            else
+            {
+                tb2.SelectedText += "5";
+            }
+        }
+
+        private void btnsix_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += "6";
+
+
+
+            }
+            else
+            {
+                tb2.SelectedText += "6";
+            }
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += "7";
+
+
+
+            }
+            else
+            {
+                tb2.SelectedText += "7";
+            }
+        }
+
+        private void btneight_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += "8";
+
+
+
+            }
+            else
+            {
+                tb2.SelectedText += "8";
+            }
+        }
+
+        private void btnnine_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += "9";
+
+
+
+            }
+            else
+            {
+                tb2.SelectedText += "9";
+            }
+        }
+
+        private void btnzero_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.SelectedText += "0";
+
+
+
+            }
+            else
+            {
+                tb2.SelectedText += "0";
+            }
+        }
     }
 }
