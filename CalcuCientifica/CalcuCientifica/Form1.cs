@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using org.matheval;
 
 namespace CalcuCientifica
@@ -27,10 +28,23 @@ namespace CalcuCientifica
         {
             double[] x = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             DataTable dt = new DataTable();
-            foreach(double num in x)
+            dt.Columns.Add("Valor_X", typeof(double));
+            dt.Columns.Add("Valor_Y", typeof(double));
+
+            Expression expr = new Expression();
+            expr.SetFomular(funcion);
+            
+            foreach (double num in x)
             {
-                int a = 0;
+                expr.Bind("x", num);
+                dt.Rows.Add(num, expr.Eval<double>());
             }
+
+            chart1.DataSource = dt;
+            chart1.Series["Series1"].XValueMember = "Valor_X";
+            chart1.Series["Series1"].YValueMembers = "Valor_Y";
+            chart1.Series["Series1"].ChartType = SeriesChartType.Line;
+            chart1.ChartAreas[0].AxisY.LabelStyle.Format = "";
         }
         private void Plot3d(String funcion)
         {
@@ -355,6 +369,11 @@ namespace CalcuCientifica
                 res = "Syntax Error";
             }
             tbRes.Text = res;
+        }
+
+        private void btn2d_Click(object sender, EventArgs e)
+        {
+            Plot2d(tb1.Text);
         }
     }
 }
