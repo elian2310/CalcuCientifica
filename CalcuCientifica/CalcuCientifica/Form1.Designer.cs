@@ -1,7 +1,7 @@
 ﻿
 namespace CalcuCientifica
 {
-    partial class Form1
+    partial class btnac
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,9 +29,9 @@ namespace CalcuCientifica
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tb1 = new System.Windows.Forms.TextBox();
             this.tb2 = new System.Windows.Forms.TextBox();
             this.tbRes = new System.Windows.Forms.TextBox();
@@ -61,6 +61,8 @@ namespace CalcuCientifica
             this.btneight = new System.Windows.Forms.Button();
             this.btnsix = new System.Windows.Forms.Button();
             this.btnzero = new System.Windows.Forms.Button();
+            this.btndel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -229,16 +231,16 @@ namespace CalcuCientifica
             // 
             // chart1
             // 
-            chartArea15.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea15);
-            legend15.Name = "Legend1";
-            this.chart1.Legends.Add(legend15);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(786, 32);
             this.chart1.Name = "chart1";
-            series15.ChartArea = "ChartArea1";
-            series15.Legend = "Legend1";
-            series15.Name = "Series1";
-            this.chart1.Series.Add(series15);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(300, 300);
             this.chart1.TabIndex = 17;
             this.chart1.Text = "chart1";
@@ -353,11 +355,33 @@ namespace CalcuCientifica
             this.btnzero.UseVisualStyleBackColor = true;
             this.btnzero.Click += new System.EventHandler(this.btnzero_Click);
             // 
-            // Form1
+            // btndel
+            // 
+            this.btndel.Location = new System.Drawing.Point(46, 435);
+            this.btndel.Name = "btndel";
+            this.btndel.Size = new System.Drawing.Size(75, 23);
+            this.btndel.TabIndex = 29;
+            this.btndel.Text = "DEL";
+            this.btndel.UseVisualStyleBackColor = true;
+            this.btndel.Click += new System.EventHandler(this.btndel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(127, 435);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "←";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btnac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1143, 571);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btndel);
             this.Controls.Add(this.btnzero);
             this.Controls.Add(this.btnsix);
             this.Controls.Add(this.btneight);
@@ -387,7 +411,7 @@ namespace CalcuCientifica
             this.Controls.Add(this.tbRes);
             this.Controls.Add(this.tb2);
             this.Controls.Add(this.tb1);
-            this.Name = "Form1";
+            this.Name = "btnac";
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
@@ -427,6 +451,8 @@ namespace CalcuCientifica
         private System.Windows.Forms.Button btneight;
         private System.Windows.Forms.Button btnsix;
         private System.Windows.Forms.Button btnzero;
+        private System.Windows.Forms.Button btndel;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -12,9 +12,9 @@ using org.matheval;
 
 namespace CalcuCientifica
 {
-    public partial class Form1 : Form
+    public partial class btnac : Form
     {
-        public Form1()
+        public btnac()
         {
             InitializeComponent();
         }
@@ -545,6 +545,38 @@ namespace CalcuCientifica
             else
             {
                 tb2.SelectedText += "0";
+            }
+        }
+
+        private void btndel_Click(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+                tb1.Text = "";
+
+
+
+            }
+            else
+            {
+                tb2.Text = "";
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (isSelected == true)
+            {
+
+                string res = tb1.Text.Remove(tb1.Text.Length - 1, 1);
+                tb1.Text = res;
+
+
+            }
+            else
+            {
+                string res1 = tb2.Text.Remove(tb2.Text.Length - 1, 1);
+                tb2.Text = res1;
             }
         }
     }
