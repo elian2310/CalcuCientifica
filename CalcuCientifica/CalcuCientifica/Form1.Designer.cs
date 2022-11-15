@@ -1,7 +1,7 @@
 ﻿
 namespace CalcuCientifica
 {
-    partial class Form1
+    partial class btnac
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,9 +29,9 @@ namespace CalcuCientifica
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tb1 = new System.Windows.Forms.TextBox();
             this.tb2 = new System.Windows.Forms.TextBox();
             this.tbRes = new System.Windows.Forms.TextBox();
@@ -51,6 +51,19 @@ namespace CalcuCientifica
             this.btnLog = new System.Windows.Forms.Button();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btn2d = new System.Windows.Forms.Button();
+            this.btnone = new System.Windows.Forms.Button();
+            this.btntwo = new System.Windows.Forms.Button();
+            this.btnnine = new System.Windows.Forms.Button();
+            this.btnfour = new System.Windows.Forms.Button();
+            this.btnfive = new System.Windows.Forms.Button();
+            this.btnthree = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.btneight = new System.Windows.Forms.Button();
+            this.btnsix = new System.Windows.Forms.Button();
+            this.btnzero = new System.Windows.Forms.Button();
+            this.btndel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +73,8 @@ namespace CalcuCientifica
             this.tb1.Name = "tb1";
             this.tb1.Size = new System.Drawing.Size(190, 22);
             this.tb1.TabIndex = 0;
+            this.tb1.Click += new System.EventHandler(this.tb1_Click);
+            this.tb1.TextChanged += new System.EventHandler(this.tb1_TextChanged);
             // 
             // tb2
             // 
@@ -67,6 +82,8 @@ namespace CalcuCientifica
             this.tb2.Name = "tb2";
             this.tb2.Size = new System.Drawing.Size(190, 22);
             this.tb2.TabIndex = 1;
+            this.tb2.Click += new System.EventHandler(this.tb2_Click);
+            this.tb2.TextChanged += new System.EventHandler(this.tb2_TextChanged);
             // 
             // tbRes
             // 
@@ -215,16 +232,16 @@ namespace CalcuCientifica
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(786, 32);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(300, 300);
             this.chart1.TabIndex = 17;
             this.chart1.Text = "chart1";
@@ -239,11 +256,154 @@ namespace CalcuCientifica
             this.btn2d.UseVisualStyleBackColor = true;
             this.btn2d.Click += new System.EventHandler(this.btn2d_Click);
             // 
-            // Form1
+            // btnone
+            // 
+            this.btnone.Location = new System.Drawing.Point(228, 344);
+            this.btnone.Name = "btnone";
+            this.btnone.Size = new System.Drawing.Size(75, 23);
+            this.btnone.TabIndex = 19;
+            this.btnone.Text = "1";
+            this.btnone.UseVisualStyleBackColor = true;
+            this.btnone.Click += new System.EventHandler(this.btnone_Click);
+            // 
+            // btntwo
+            // 
+            this.btntwo.Location = new System.Drawing.Point(320, 344);
+            this.btntwo.Name = "btntwo";
+            this.btntwo.Size = new System.Drawing.Size(75, 23);
+            this.btntwo.TabIndex = 20;
+            this.btntwo.Text = "2";
+            this.btntwo.UseVisualStyleBackColor = true;
+            this.btntwo.Click += new System.EventHandler(this.btntwo_Click);
+            // 
+            // btnnine
+            // 
+            this.btnnine.Location = new System.Drawing.Point(411, 406);
+            this.btnnine.Name = "btnnine";
+            this.btnnine.Size = new System.Drawing.Size(75, 23);
+            this.btnnine.TabIndex = 21;
+            this.btnnine.Text = "9";
+            this.btnnine.UseVisualStyleBackColor = true;
+            this.btnnine.Click += new System.EventHandler(this.btnnine_Click);
+            // 
+            // btnfour
+            // 
+            this.btnfour.Location = new System.Drawing.Point(229, 373);
+            this.btnfour.Name = "btnfour";
+            this.btnfour.Size = new System.Drawing.Size(75, 23);
+            this.btnfour.TabIndex = 22;
+            this.btnfour.Text = "4";
+            this.btnfour.UseVisualStyleBackColor = true;
+            this.btnfour.Click += new System.EventHandler(this.btnfour_Click);
+            // 
+            // btnfive
+            // 
+            this.btnfive.Location = new System.Drawing.Point(320, 373);
+            this.btnfive.Name = "btnfive";
+            this.btnfive.Size = new System.Drawing.Size(75, 23);
+            this.btnfive.TabIndex = 23;
+            this.btnfive.Text = "5";
+            this.btnfive.UseVisualStyleBackColor = true;
+            this.btnfive.Click += new System.EventHandler(this.btnfive_Click);
+            // 
+            // btnthree
+            // 
+            this.btnthree.Location = new System.Drawing.Point(411, 344);
+            this.btnthree.Name = "btnthree";
+            this.btnthree.Size = new System.Drawing.Size(75, 23);
+            this.btnthree.TabIndex = 24;
+            this.btnthree.Text = "3";
+            this.btnthree.UseVisualStyleBackColor = true;
+            this.btnthree.Click += new System.EventHandler(this.btnthree_Click);
+            // 
+            // btn7
+            // 
+            this.btn7.Location = new System.Drawing.Point(229, 406);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(75, 23);
+            this.btn7.TabIndex = 25;
+            this.btn7.Text = "7";
+            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            // 
+            // btneight
+            // 
+            this.btneight.Location = new System.Drawing.Point(320, 406);
+            this.btneight.Name = "btneight";
+            this.btneight.Size = new System.Drawing.Size(75, 23);
+            this.btneight.TabIndex = 26;
+            this.btneight.Text = "8";
+            this.btneight.UseVisualStyleBackColor = true;
+            this.btneight.Click += new System.EventHandler(this.btneight_Click);
+            // 
+            // btnsix
+            // 
+            this.btnsix.Location = new System.Drawing.Point(411, 373);
+            this.btnsix.Name = "btnsix";
+            this.btnsix.Size = new System.Drawing.Size(75, 23);
+            this.btnsix.TabIndex = 27;
+            this.btnsix.Text = "6";
+            this.btnsix.UseVisualStyleBackColor = true;
+            this.btnsix.Click += new System.EventHandler(this.btnsix_Click);
+            // 
+            // btnzero
+            // 
+            this.btnzero.Location = new System.Drawing.Point(320, 435);
+            this.btnzero.Name = "btnzero";
+            this.btnzero.Size = new System.Drawing.Size(75, 23);
+            this.btnzero.TabIndex = 28;
+            this.btnzero.Text = "0";
+            this.btnzero.UseVisualStyleBackColor = true;
+            this.btnzero.Click += new System.EventHandler(this.btnzero_Click);
+            // 
+            // btndel
+            // 
+            this.btndel.Location = new System.Drawing.Point(46, 435);
+            this.btndel.Name = "btndel";
+            this.btndel.Size = new System.Drawing.Size(75, 23);
+            this.btndel.TabIndex = 29;
+            this.btndel.Text = "DEL";
+            this.btndel.UseVisualStyleBackColor = true;
+            this.btndel.Click += new System.EventHandler(this.btndel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(127, 435);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 30;
+            this.button1.Text = "←";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(411, 435);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 31;
+            this.button2.Text = ".";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 411);
+            this.ClientSize = new System.Drawing.Size(1143, 571);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btndel);
+            this.Controls.Add(this.btnzero);
+            this.Controls.Add(this.btnsix);
+            this.Controls.Add(this.btneight);
+            this.Controls.Add(this.btn7);
+            this.Controls.Add(this.btnthree);
+            this.Controls.Add(this.btnfive);
+            this.Controls.Add(this.btnfour);
+            this.Controls.Add(this.btnnine);
+            this.Controls.Add(this.btntwo);
+            this.Controls.Add(this.btnone);
             this.Controls.Add(this.btn2d);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.btnLog);
@@ -263,7 +423,7 @@ namespace CalcuCientifica
             this.Controls.Add(this.tbRes);
             this.Controls.Add(this.tb2);
             this.Controls.Add(this.tb1);
-            this.Name = "Form1";
+            this.Name = "btnac";
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
@@ -293,6 +453,19 @@ namespace CalcuCientifica
         private System.Windows.Forms.Button btnLog;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Button btn2d;
+        private System.Windows.Forms.Button btnone;
+        private System.Windows.Forms.Button btntwo;
+        private System.Windows.Forms.Button btnnine;
+        private System.Windows.Forms.Button btnfour;
+        private System.Windows.Forms.Button btnfive;
+        private System.Windows.Forms.Button btnthree;
+        private System.Windows.Forms.Button btn7;
+        private System.Windows.Forms.Button btneight;
+        private System.Windows.Forms.Button btnsix;
+        private System.Windows.Forms.Button btnzero;
+        private System.Windows.Forms.Button btndel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
